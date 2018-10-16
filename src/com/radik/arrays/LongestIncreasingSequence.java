@@ -53,7 +53,6 @@ public class LongestIncreasingSequence {
                     current = 1;
                 }
             }
-
             previous = next;
         }
 
