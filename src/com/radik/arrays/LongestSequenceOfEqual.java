@@ -42,7 +42,6 @@ public class LongestSequenceOfEqual {
                 }
                 current = 1;
             }
-
         }
         System.out.println(max);
     }
