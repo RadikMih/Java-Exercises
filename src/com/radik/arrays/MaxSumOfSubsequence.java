@@ -30,6 +30,7 @@ public class MaxSumOfSubsequence {
         int current = 0;
         int max = 0;
 
+        //Kadane’s Algorithm
         for (int i = 0; i < n; i++) {
             int next = Integer.parseInt(reader.readLine());
             current += next;
