@@ -44,8 +44,8 @@ public class SpellCaster {
             spell.add(i, result.charAt(i));
         }
 
-        int step = 0;
-        int nextIndex = 0;
+        int step;
+        int nextIndex;
         int size = spell.size();
 
 
