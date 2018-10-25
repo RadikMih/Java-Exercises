@@ -1,4 +1,4 @@
-package com.radik;
+package com.telerik;
 
 public class Main {
 

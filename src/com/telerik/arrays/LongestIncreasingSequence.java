@@ -1,4 +1,4 @@
-package com.radik.arrays;
+package com.telerik.arrays;
 
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
