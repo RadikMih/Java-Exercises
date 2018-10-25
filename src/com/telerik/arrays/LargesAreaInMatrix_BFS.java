@@ -39,21 +39,20 @@ public class LargesAreaInMatrix_BFS {
         }
 
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                String current = matrix[i][j];
-                if (current.equals("x")) {
-                    continue;
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    String current = matrix[i][j];
+                    if (current.equals("x")) {
+                        continue;
+                    }
+                    currentArea = 0;
+                    Cell cell = new Cell(i, j);
+                    queue.add(cell);
+
+                    bfs(current);
+
                 }
-                currentArea = 0;
-                Cell cell = new Cell(i, j);
-                queue.add(cell);
-
-                bfs(current);
-
-
             }
-        }
 
         System.out.println(maxArea);
 
