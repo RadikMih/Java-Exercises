@@ -38,7 +38,7 @@ public class Circle {
         }
 
         int currentIndex = 0;
-        int nextIndex = 0;
+        int nextIndex;
 
         while (numbers.size() > 2) {
 
