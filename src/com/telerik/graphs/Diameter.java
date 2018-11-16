@@ -12,17 +12,11 @@ import java.util.Map;
 public class Diameter {
 
     private static void fakeInput() {
-        String args = "11\n" +
-                "2 7 2\n" +
-                "1 7 6\n" +
-                "5 1 8\n" +
-                "2 8 6\n" +
-                "8 6 9\n" +
-                "10 5 5\n" +
-                "9 1 9\n" +
-                "0 10 15\n" +
-                "3 1 21\n" +
-                "6 4 3";
+        String args = "5\n" +
+                "3 4 3\n" +
+                "0 3 4\n" +
+                "0 2 6\n" +
+                "1 4 9";
         System.setIn(new ByteArrayInputStream(args.getBytes()));
     }
 
