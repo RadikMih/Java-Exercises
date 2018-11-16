@@ -11,28 +11,22 @@ public class AboveTheMainDiagonal2 {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int n = 4;
+        int n = Integer.parseInt(reader.readLine());
 
         long count;
-        int base = 1;
+        long base = 1;
         long sum = 0;
 
         long[][] matrix = new long[n][n];
 
         for (int i = 0; i < n; i++) {
             count = base;
-            for (int j = 0; j < n; j++) {
+            for (int j = i; j < n; j++) {
                 matrix[i][j] = count;
+                sum = sum + matrix[i][j];
                 count *= 2;
             }
-            base *= 2;
-
-        }
-
-        for (int i = 0; i < n ; i++) {
-            for (int j = i; j < n; j++) {
-                sum = sum + matrix[i][j];
-            }
+            base *= 4;
 
         }
 
