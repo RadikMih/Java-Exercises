@@ -30,7 +30,7 @@ public class ArraySearch {
 
         for (int i = 1; i <= n; i++) {
             if (!set.contains(i)){
-                builder.append(i + ",");
+                builder.append(i).append(",");
             }
         }
 
