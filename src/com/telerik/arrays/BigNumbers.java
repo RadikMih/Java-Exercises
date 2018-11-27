@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 
 public class BigNumbers {
@@ -62,5 +63,6 @@ public class BigNumbers {
                 result[i] = sum;
             }
         }
+        Arrays.stream(result).forEach(x -> System.out.print(x + " "));
     }
 }
