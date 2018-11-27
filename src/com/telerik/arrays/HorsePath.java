@@ -21,28 +21,31 @@ public class HorsePath {
         int counter = 1;
         matrix[row][col] = counter;
 
-        while (counter != n * n){
+        while (counter != n * n) {
             for (int i = 0; i < dRow.length; i++) {
                 int nextRow = row + dRow[i];
                 int nextCol = col + dCol[i];
 
-                if (nextRow < 0 || nextRow > matrix.length - 1 || nextCol < 0 || nextCol > matrix.length -1 || matrix[nextRow][nextCol] != 0){
-                    if (i < dRow.length - 1){
+                if (nextRow < 0 || nextRow > matrix.length - 1 || nextCol < 0 || nextCol > matrix.length - 1 || matrix[nextRow][nextCol] != 0) {
+                    if (i < dRow.length - 1) {
                         continue;
                     } else {
                         search:
                         for (int j = 0; j < n; j++) {
                             for (int k = 0; k < n; k++) {
-                                if (matrix[j][k] == 0){
-                                    nextRow = j;
-                                    nextCol = k;
+                                if (matrix[j][k] == 0) {
+                                    row = j;
+                                    col = k;
+                                    counter++;
+                                    matrix[row][col] = counter;
                                     break search;
                                 }
                             }
                         }
+                        continue;
                     }
                 }
-
+                
                 row = nextRow;
                 col = nextCol;
                 counter++;
