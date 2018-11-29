@@ -46,6 +46,7 @@ public class HorsePath {
                     }
                 }
 
+
                 row = nextRow;
                 col = nextCol;
                 counter++;
