@@ -1,5 +1,7 @@
 package hackerrank.solve30daysofcode;
 
+// day 7
+
 import java.util.Scanner;
 
 public class LetsReview {
