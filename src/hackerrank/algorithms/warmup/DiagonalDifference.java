@@ -1,4 +1,4 @@
-package hackerrank.problemsolving.warmup;
+package hackerrank.algorithms.warmup;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package hackerrank.problemsolving.dynamicprogramming;
+package hackerrank.algorithms.dynamicprogramming;
 
 import java.util.HashMap;
 import java.util.Scanner;

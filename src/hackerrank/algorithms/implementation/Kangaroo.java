@@ -1,4 +1,4 @@
-package hackerrank.problemsolving.implementation;
+package hackerrank.algorithms.implementation;
 
 import java.io.IOException;
 import java.util.Scanner;

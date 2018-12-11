@@ -1,6 +1,4 @@
-package hackerrank.problemsolving.implementation;
-
-import jdk.nashorn.internal.ir.IfNode;
+package hackerrank.algorithms.implementation;
 
 import java.io.BufferedReader;
 import java.io.IOException;

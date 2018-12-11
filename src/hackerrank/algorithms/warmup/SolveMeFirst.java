@@ -1,10 +1,6 @@
-package hackerrank.problemsolving.warmup;
+package hackerrank.algorithms.warmup;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class SolveMeFirst {
     static int solveMeFirst(int a, int b) {
