@@ -4,10 +4,10 @@ package hackerrank.solve30daysofcode;
 
 import java.util.*;
 
-public class Person {
+public class PersonAge {
     private int age;
 
-    public Person(int initialAge) {
+    public PersonAge(int initialAge) {
         // Add some more code to run some checks on initialAge
 
         if (initialAge < 0){
@@ -39,7 +39,7 @@ public class Person {
         int T = sc.nextInt();
         for (int i = 0; i < T; i++) {
             int age = sc.nextInt();
-            Person p = new Person(age);
+            PersonAge p = new PersonAge(age);
             p.amIOld();
             for (int j = 0; j < 3; j++) {
                 p.yearPasses();
