@@ -1,10 +1,10 @@
 package dsa.linkedlist;
 
-class Node {
-    Node next;
-    int data;
+class Node<T> {
+    Node<T> next;
+    T data;
 
-    Node(int data) {
+    Node(T data) {
         this.data = data;
     }
 

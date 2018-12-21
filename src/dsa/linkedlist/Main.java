@@ -3,7 +3,7 @@ package dsa.linkedlist;
 public class Main {
     public static void main(String[] args) {
 
-        LinkedList linkedList = new LinkedList();
+        LinkedList<Integer> linkedList = new LinkedList<>();
         int n = 3;
 
         for (int i = 1; i <= n; i++) {
@@ -23,7 +23,7 @@ public class Main {
 
         linkedList.display();
 
-        Node head = linkedList.removeHead();
+        Node<Integer> head = linkedList.removeHead();
         System.out.println();
         System.out.println(head.data);
 

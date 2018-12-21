@@ -1,38 +1,38 @@
 package dsa.linkedlist;
 
 
-public class LinkedList {
-    private Node head;
+public class LinkedList<T> {
+    private Node<T> head;
 
-    public void append(int data) {
+    public void append(T data) {
         if (head == null) {
-            head = new Node(data);
+            head = new Node<>(data);
             return;
         }
-        Node current = head;
+        Node<T> current = head;
         while (current.next != null) {
             current = current.next;
         }
-        current.next = new Node(data);
+        current.next = new Node<>(data);
     }
 
-    public void prepend(int data) {
-        Node newHead = new Node(data);
+    void prepend(T data) {
+        Node<T> newHead = new Node<>(data);
         newHead.next = head;
         head = newHead;
     }
 
-    public void deleteWithValue(int data) {
+    void deleteWithValue(T data) {
         if (head == null) return;
 
-        if (head.data == data) {
+        if (head.data.equals(data) ) {
             head = head.next;
             return;
         }
 
-        Node current = head;
+        Node<T> current = head;
         while (current.next != null) {
-            if (current.next.data == data) {
+            if (current.next.data.equals(data)) {
                 current.next = current.next.next;
                 return;
             }
@@ -44,8 +44,8 @@ public class LinkedList {
         return (head == null);
     }
 
-    Node removeHead(){
-        Node nodeToRemove = head;
+    Node<T> removeHead(){
+        Node<T> nodeToRemove = head;
 
         if (!isEmpty()){
             head = head.next;
@@ -56,7 +56,7 @@ public class LinkedList {
     }
 
     void display(){
-        Node node = head;
+        Node<T> node = head;
 
         while (node != null){
             node.display();
