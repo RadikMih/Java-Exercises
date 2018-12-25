@@ -8,7 +8,7 @@ class Node<T> {
         this.data = data;
     }
 
-    public void display() {
+    void display() {
         System.out.print(data + " ");
     }
 }
