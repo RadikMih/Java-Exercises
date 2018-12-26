@@ -131,13 +131,16 @@ public class BinarySearchTree {
     }
 
     private Node removeNode(Node current, int value) {
-        if (current.data == value){
-            if (current.left == null && current.right == null){
-               return null;
-            } else if (current.left == null){
+        if (current == null) {
+            return null;
+        }
+        if (current.data == value) {
+            if (current.left == null && current.right == null) {
+                return null;
+            } else if (current.left == null) {
                 return current.right;
             } else if (current.right == null) {
-               return current.left;
+                return current.left;
             } else {
                 Node smallestNode = lookForSmallest(current.right);
                 current.data = smallestNode.data;
@@ -152,7 +155,7 @@ public class BinarySearchTree {
     }
 
     private Node lookForSmallest(Node rightTree) {
-        if (rightTree.left == null){
+        if (rightTree.left == null) {
             return rightTree;
         } else {
             return lookForSmallest(rightTree.left);
