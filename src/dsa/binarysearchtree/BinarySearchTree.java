@@ -130,7 +130,7 @@ public class BinarySearchTree {
         removeNode(root, value);
     }
 
-    private Node removeNode(Node current, int value) {
+    Node removeNode(Node current, int value) {
         if (current == null) {
             return null;
         }

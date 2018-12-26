@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println(tree.search(7));
 
-        tree.delete(7);
+        tree.delete(5);
         System.out.println();
         tree.preOrder();
         tree.inOrder();
