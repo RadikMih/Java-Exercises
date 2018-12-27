@@ -5,31 +5,30 @@ import java.util.Scanner;
 public class CountingValleys {
 
     private static int countingValleys(int n, String s) {
-      char[] letters = s.toCharArray();
-      boolean isUnderSeaLevel = false;
-      int result = 0;
-      int tracker = 0;
+        char[] letters = s.toCharArray();
+        boolean isUnderSeaLevel = false;
+        int result = 0;
+        int tracker = 0;
 
         for (int i = 0; i < n; i++) {
-            if (letters[i] == 'U'){
+            if (letters[i] == 'U') {
                 tracker++;
             } else {
                 tracker--;
             }
 
-            if (tracker < 0){
+            if (tracker < 0) {
                 isUnderSeaLevel = true;
             }
 
-            if (isUnderSeaLevel && tracker == 0){
+            if (isUnderSeaLevel && tracker == 0) {
                 result++;
                 isUnderSeaLevel = false;
             }
         }
 
 
-
-      return result;
+        return result;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
