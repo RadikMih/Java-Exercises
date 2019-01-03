@@ -176,4 +176,22 @@ class BinarySearchTree {
             return lookForSmallest(rightTree.left);
         }
     }
+
+    // ------------ get height --------------
+    int getHeight() {
+        return height(root);
+    }
+
+    private int height(Node root) {
+        if (root == null) {
+            return -1;
+        }
+
+        int left = height(root.left);
+        int right = height(root.right);
+
+        return left > right ? left + 1 : right + 1;
+    }
+
+
 }

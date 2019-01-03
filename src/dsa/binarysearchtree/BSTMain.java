@@ -12,6 +12,8 @@ public class BSTMain {
         tree.insert(6);
         tree.insert(7);
 
+
+        System.out.println(tree.getHeight());
         tree.preOrder();
         tree.inOrder();
         tree.postOrder();
