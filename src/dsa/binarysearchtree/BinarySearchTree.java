@@ -127,30 +127,54 @@ public class BinarySearchTree {
 
     // ------------ delete --------------
     void delete(int value) {
+        if (root == null) {
+            System.out.println("The tree is empty!");
+            return;
+        }
+
+        if (!search(value)) {
+            System.out.println("The number you are looking for is not in the Tree");
+            return;
+        }
         removeNode(root, value);
     }
 
-    Node removeNode(Node current, int value) {
-        if (current == null) {
-            return null;
-        }
+    private Node removeNode(Node current, int value) {
         if (current.data == value) {
             if (current.left == null && current.right == null) {
+                if (current == root) {
+                    root = null;
+                    System.out.println("The root is deleted");
+                }
                 return null;
             } else if (current.left == null) {
-                return current.right;
+                current = current.right;
+                current.right = null;
             } else if (current.right == null) {
-                return current.left;
+                current = current.left;
+                current.left = null;
             } else {
                 Node smallestNode = lookForSmallest(current.right);
                 current.data = smallestNode.data;
-                removeNode(current.right, smallestNode.data);
+                current.right = removeNode(current.right, smallestNode.data);
             }
-        } else if (value < current.data) {
-            removeNode(current.left, value);
-        } else {
-            removeNode(current.right, value);
+            return current;
         }
+
+        if (value < current.data) {
+            current.left = removeNode(current.left, value);
+        } else {
+            current.right = removeNode(current.right, value);
+        }
+
+
+
+
+
+
+
+
+
         return current;
     }
 

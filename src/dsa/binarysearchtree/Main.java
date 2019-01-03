@@ -18,8 +18,11 @@ public class Main {
 
         System.out.println(tree.search(7));
 
+        tree.delete(10);
         tree.delete(5);
+
         System.out.println();
+
         tree.preOrder();
         tree.inOrder();
         tree.postOrder();
@@ -29,5 +32,6 @@ public class Main {
         newTree.inOrder();
         newTree.delete(5);
         newTree.inOrder();
+        newTree.delete(10);
     }
 }
