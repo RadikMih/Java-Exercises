@@ -3,7 +3,7 @@ package dsa.binarysearchtree;
 // search O(log N)
 // insert O(log N)
 
-public class BinarySearchTree {
+class BinarySearchTree {
     private Node root;
 
     BinarySearchTree() {
