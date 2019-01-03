@@ -1,6 +1,6 @@
 package dsa.binarysearchtree;
 
-public class Main {
+public class BSTMain {
     public static void main(String[] args) {
 
         BinarySearchTree tree = new BinarySearchTree();
