@@ -166,15 +166,6 @@ class BinarySearchTree {
         } else {
             current.right = removeNode(current.right, value);
         }
-
-
-
-
-
-
-
-
-
         return current;
     }
 
