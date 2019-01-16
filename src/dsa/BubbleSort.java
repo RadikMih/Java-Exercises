@@ -27,7 +27,7 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] array = {9, 7, 4, 3, 2, 1, 8, 5};
+        int[] array = {7, 9, 4, 3, 2, 1, 8, 5};
         bubbleSort(array);
 
         for (int number : array) {
